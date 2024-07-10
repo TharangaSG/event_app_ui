@@ -20,6 +20,13 @@ const EventList: React.FC = () => {
       {error && <p className="text-red-500">{error}</p>}
       {events.map((event: Event) => (
         <div key={event.id} className="bg-white p-6 border rounded-lg shadow-lg">
+          {event.imageUrl && (
+            <img
+              src={event.imageUrl}
+              alt={event.name}
+              className="w-full h-48 object-cover mb-4 rounded-lg"
+            />
+          )}
           <h2 className="text-2xl font-semibold mb-2">{event.name}</h2>
           <p className="mb-2 text-gray-700">{event.description}</p>
           <p className="mb-2 text-gray-500">{new Date(event.dateTime).toLocaleString()}</p>

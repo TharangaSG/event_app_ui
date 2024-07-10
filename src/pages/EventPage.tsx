@@ -1,6 +1,5 @@
 import React from 'react';
 import EventList from '../components/EventList';
-import Header from '../components/Header';
 
 const EventPage: React.FC = () => {
   return (

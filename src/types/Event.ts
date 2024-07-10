@@ -5,6 +5,7 @@ export interface Event {
     dateTime: string;
     location: string;
     category: string;
+    imageUrl: string;
   }
   
 
